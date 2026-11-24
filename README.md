@@ -67,3 +67,8 @@ The eight-course dashboard includes Python Engineering A–Z, GoHighLevel CRM & 
 Routes: / for the eight-course dashboard; /career?track=python for Python practice; /career?track=gohighlevel for HighLevel client delivery; /career?track=agentic for AI agent engineering; and /watch?course=python (or gohighlevel or agentic) for the embedded video collection.
 
 Scope: Career pathways do not guarantee employment. In-browser Python execution uses Pyodide loaded from a third-party CDN in a Web Worker with a 12-second timeout; never run untrusted code or paste secrets. HighLevel and agent labs describe practice in your own development or test environment, not authenticated live integration. The AI interview mode depends on separately configured server credentials and access control. Streak and XP progress is stored on the browser only.
+
+
+## Full day-by-day course classroom
+
+The `/watch` route now uses a course-content layout inspired by modern learning management systems. Each of the eight tracks has a 90-day accordion syllabus, with five activities on every day: related video, reading/study notes, practice, three-question knowledge check, and self-attested assessment. All activities can be opened inside the academy; the video player uses permission-dependent YouTube embeds, and many day topics currently share related course-level videos rather than having unique day-specific lectures. Daily learning activities are tracked in `sa-watch-curriculum-v2` browser storage. Quizzes use contextual formative question templates, not a unique independently validated exam for every day. No certificate or job qualification is issued.

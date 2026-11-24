@@ -1,1 +1,1 @@
-import './watch.css';export const metadata={title:'Watch Lessons | Success Academy',description:'Immersive in-platform lesson player with guided playlists, chapter navigation, practice and study notes'};export default function Layout({children}){return children;}
+import './curriculum.css';export const metadata={title:'Course Classroom & Curriculum | Success Academy',description:'Full 90-day course outlines with video, study notes, exercises, quizzes and assessments in the same learning workspace'};export default function Layout({children}){return children;}
