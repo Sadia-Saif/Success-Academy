@@ -10,4 +10,4 @@ export const lessonVideos=[
 {id:'ielts-speaking',course:'ielts',level:'Beginner',title:'IELTS Speaking: Expert Preparation Guide',provider:'IELTS by IDP',videoId:'Uh9U96iNt9A',duration:'~29 min',summary:'Speaking Part 1, 2 and 3 format, fluency, vocabulary and preparation advice.',chapters:[{title:'Speaking parts explained',second:148},{title:'Strategies for success',second:650},{title:'Test-taker questions',second:1312}]},
 {id:'ielts-tips',course:'ielts',level:'Intermediate',title:'IELTS Speaking Confidence Tips',provider:'IELTS by IDP',videoId:'ej2o6Tfbrcg',duration:'Short lesson',summary:'Speaking habits, daily practice and understanding assessment criteria.',chapters:[{title:'Practise English daily',second:16},{title:'Record yourself',second:52},{title:'Assessment criteria',second:87}]}
 ];
-export function embedLink(id,start=0){return 'https://www.youtube-nocookie.com/embed/'+id+'?rel=0&playsinline=1'+(start>0?'&start='+Math.floor(start):'')}
+export function embedLink(id,start=0){return 'https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&mute=1&playsinline=1&rel=0'+(start>0?'&start='+Math.floor(start):'')}
