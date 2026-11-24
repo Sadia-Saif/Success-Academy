@@ -1,0 +1,1 @@
+import './career.css';export const metadata={title:'Career Lab | Success Academy',description:'Interactive coding practice, Python, GoHighLevel and Agentic AI interview preparation'};export default function Layout({children}){return children;}

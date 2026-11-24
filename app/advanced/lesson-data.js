@@ -2,6 +2,30 @@ import {topics,tracks,resources,lessons} from '../data';
 export {tracks,resources,lessons};
 const prefixes=['Understand','Apply','Integrate','Debug','Deliver','Refactor','Explain','Evaluate','Optimize','Demonstrate'];
 const approaches={
+python:{
+prereq:['Variables and control flow','Functions and data structures','Modules and virtual environments','OOP and typing','Algorithms','HTTP and APIs','SQL and FastAPI','Testing and debugging','Deployment','Portfolio interviews'],
+goals:['Explain core concepts in','Implement a small example of','Apply','Debug and validate','Test and document','Compare design approaches for','Explain time and space complexity in','Review security and reliability of','Optimize production patterns for','Present a job-ready demonstration of'],
+sim:'You are a Python backend developer building and supporting a reliable lead intake API for a US logistics operator, with validation, persistence, tests and clear documentation.',
+deliver:'Publish a reproducible GitHub project with tests, setup steps, example requests and a short architecture explanation.',
+questions:['What input validation is required?','How will you verify correctness?','What failure paths could appear in production?','How would you explain the design in a technical interview?'],
+tools:['Python interpreter','VS Code','pytest','FastAPI','GitHub']
+},
+gohighlevel:{
+prereq:['CRM concepts','Agency and sub-account boundaries','Contacts and opportunities','Forms and calendars','Workflow triggers','Compliance and opt-outs','Reporting','Webhooks and API integrations','Troubleshooting','Client training'],
+goals:['Identify business requirements for','Configure a working example of','Map the data model of','Troubleshoot a misconfiguration in','Test a real-world workflow for','Compare alternative HighLevel setups for','Explain business impact from','Review client data security in','Improve reliability of','Present a client delivery case for'],
+sim:'A growing service business needs a HighLevel CRM system to capture inbound leads, assign opportunities, book appointments and handle permission-based follow-ups without duplicates.',
+deliver:'Provide setup screenshots, workflow diagrams, data mapping, consent rules, acceptance tests and a client handover video.',
+questions:['What problem is the client solving?','What data and permissions are needed?','How will you prevent accidental duplicate outreach?','How will you train the client to maintain the solution?'],
+tools:['HighLevel sandbox account','CRM pipeline','Workflow builder','Calendars','Client documentation']
+},
+agentic:{
+prereq:['Python and APIs','LLM prompts and messages','Structured outputs','Agent tools','State and memory','LangGraph','RAG','Guardrails','Agent evaluation','Production monitoring'],
+goals:['Explain the agent architecture of','Implement an example using','Connect a validated tool to','Debug failure modes in','Test and observe','Compare agent designs for','Explain trust boundaries of','Evaluate the safety of','Optimize cost and latency of','Present a production-oriented system for'],
+sim:'A support operations team needs a secure knowledge agent with evidence-based answers, constrained tools, clear handoff to humans and measurable evaluation results.',
+deliver:'Publish an agent application with typed tool contracts, retrieval citations, test/evaluation dataset, observability traces, approval flow and deployment notes.',
+questions:['Which decisions may the model make autonomously?','How will you handle prompt injection?','What evaluation results prove usefulness?','How do cost, latency and escalation affect your architecture?'],
+tools:['Python','LangGraph','LangSmith','FastAPI','Evaluation dataset']
+},
 automation:{
 prereq:['Browser basics','Data types','JSON objects','HTTP requests','API credentials','Webhooks','n8n nodes','Error handling','Databases','AI tool calling'],
 goals:['Recognize the input and output of','Explain the technical purpose of','Build a minimal example involving','Handle an error condition in','Test and document','Compare two approaches to','Explain to a nontechnical buyer','Assess security risks in','Optimize for reliability','Demonstrate a production-quality result for'],
@@ -35,7 +59,7 @@ questions:['What might the other person be feeling?','Which assumption could be 
 tools:['Reflection journal','Role-play prompts','Feedback framework','Decision checklist','Conversation recorder']
 }};
 export const degree=[{range:[1,10],title:'Foundations',level:'Beginner',focus:'Build precise mental models and vocabulary'},{range:[11,20],title:'Integration',level:'Intermediate',focus:'Connect tools and explain decisions'},{range:[21,30],title:'Professional Delivery',level:'Advanced',focus:'Complete practical portfolio projects'},{range:[31,45],title:'Guided Repetition',level:'Professional',focus:'Repeat complete workflows and case studies'},{range:[46,60],title:'Applied Performance',level:'Professional',focus:'Handle changing customer and technical constraints'},{range:[61,75],title:'Expert Challenges',level:'Advanced',focus:'Debug, scale and defend independent solutions'},{range:[76,90],title:'Capstone & Interviews',level:'Advanced',focus:'Ship, present and reflect on multiple scenarios'}];
-export function lessonFor(track,day){const cfg=approaches[track]||approaches.automation;const sourceIndex=(day-1)%30;const topic=topics[track][sourceIndex];const cycle=Math.floor((day-1)/30);const offset=(day-1)%10;const phase=degree.find(x=>day>=x.range[0]&&day<=x.range[1]);const stageLabel=cycle===0?'Foundation lesson':cycle===1?'Client implementation sprint':'Advanced independent challenge';const goal=cfg.goals[offset]+' '+topic+'.';const tasks=cycle===0?[
+export function lessonFor(track,day){const cfg=approaches[track]||approaches.automation;const topicCount=topics[track].length;const sourceIndex=topicCount===90?day-1:(day-1)%30;const topic=topics[track][sourceIndex];const cycle=Math.floor((day-1)/30);const offset=(day-1)%10;const phase=degree.find(x=>day>=x.range[0]&&day<=x.range[1]);const stageLabel=cycle===0?'Foundation lesson':cycle===1?'Client implementation sprint':'Advanced independent challenge';const goal=cfg.goals[offset]+' '+topic+'.';const tasks=cycle===0?[
 'Explain '+topic+' in your own words and define three essential terms.',
 'Study a worked example and identify its assumptions.',
 'Use '+cfg.tools[0]+' or an equivalent practice environment to reproduce the smallest working example.',

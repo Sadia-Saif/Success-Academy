@@ -58,3 +58,12 @@ On first browser load the dashboard imports progress from existing local browser
 ## In-Academy Video Studio
 
 Visit `/watch` for an integrated 16:9 player, chapter navigation, playlists organized by course, practice assignments, personal notes and manual video completion tracking. The main dashboard's Video Studio and each course's Watch stage offer embedded playback. Source videos use YouTube's privacy-enhanced embed host, so playback occurs in the academy *when the original publisher permits embedding*. Ownership, streaming and advertising controls remain with publishers, and some videos may refuse inline playback. Only known video URLs have been added to the player. Non-video resources remain links rather than being falsely represented as videos. Video completion is saved to local browser storage, not verified by playback events or synchronized across accounts.
+
+
+## Job-ready career tracks and interactive practice
+
+The eight-course dashboard includes Python Engineering A–Z, GoHighLevel CRM & Automation, and Agentic AI Engineering. Each offers a named 90-day syllabus, practical projects, and official training resources. The /career Career Lab adds original bite-sized lessons, quick quizzes, XP, daily streaks, progress, Python exercises, project briefs and interview practice.
+
+Routes: / for the eight-course dashboard; /career?track=python for Python practice; /career?track=gohighlevel for HighLevel client delivery; /career?track=agentic for AI agent engineering; and /watch?course=python (or gohighlevel or agentic) for the embedded video collection.
+
+Scope: Career pathways do not guarantee employment. In-browser Python execution uses Pyodide loaded from a third-party CDN in a Web Worker with a 12-second timeout; never run untrusted code or paste secrets. HighLevel and agent labs describe practice in your own development or test environment, not authenticated live integration. The AI interview mode depends on separately configured server credentials and access control. Streak and XP progress is stored on the browser only.

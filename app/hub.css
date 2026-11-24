@@ -124,3 +124,13 @@ button,input,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;
 .hubNoVideo{height:100%;display:grid;place-items:center;color:white;font-size:13px}
 @media(max-width:1050px){.hubLibraryLayout{grid-template-columns:1fr}.hubVideoPromo{flex-wrap:wrap}}
 @media(max-width:650px){.hubVideoPromo{padding:17px;gap:12px}.hubVideoPromo .hubButton{width:100%}.hubVideoPromo h3{font-size:16px}.hubPromoMark{width:46px;height:46px}.hubInlinePlayer{border-radius:9px}.hubPlayerPoster>span{height:45px;width:45px}.hubPlayerPoster>span svg{width:22px}.hubPlayerPoster strong{font-size:14px}.hubPlayerPoster{gap:6px;padding:9px}.hubPlayerPoster em{padding:7px;font-size:10px}.hubPlaylistTitle{align-items:start;flex-direction:column}.hubLibraryLayout .hubPanel{padding:14px}}
+
+
+/* Career tracks and Sololearn-style interactive lab launch */
+.hubCareerPromo{margin:19px 0 4px;border:1px solid #e1dbff;border-radius:17px;background:linear-gradient(110deg,#f7f4ff,#eef4ff);padding:24px 26px;display:flex;align-items:center;justify-content:space-between;gap:17px;box-shadow:0 8px 24px #27396f10}
+.hubCareerPromo>div{flex:1}.hubCareerPromo span{font-size:10px;color:#735cd0;font-weight:800;letter-spacing:1.2px}.hubCareerPromo h3{font:800 19px Manrope;color:#27345d;letter-spacing:-.5px;margin:8px 0}.hubCareerPromo p{font-size:12px;line-height:1.8;color:#737f9b;margin:0}.hubCareerPromo .hubButton{white-space:nowrap}
+.hubCareerChoices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.hubCareerChoice{display:flex;align-items:center;gap:13px;border-radius:15px;padding:17px;text-align:left;background:#fff;border:1px solid #e2e5f0;box-shadow:0 9px 22px #1a316311;color:#29375d}
+.hubCareerChoice:hover{border-color:#b3a4f1;transform:translateY(-3px)}.hubCareerChoice>div{display:grid;place-items:center;color:white;width:54px;height:54px;flex-shrink:0;border-radius:12px}.hubCareerChoice span{flex:1}.hubCareerChoice strong{display:block;font-size:13px}.hubCareerChoice small{display:block;font-size:11px;color:#8c94ab;margin-top:6px;line-height:1.6}.hubCareerChoice>svg{color:#7664d5}
+@media(max-width:980px){.hubCareerChoices{grid-template-columns:1fr}.hubCareerPromo{flex-direction:column;align-items:start}}
+@media(max-width:600px){.hubCareerPromo{padding:19px}.hubCareerPromo .hubButton{width:100%}.hubCareerPromo h3{font-size:16px}}

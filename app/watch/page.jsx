@@ -2,12 +2,15 @@
 import React,{useState,useEffect,useMemo} from 'react';
 import {lessonVideos,embedLink} from './video-data';
 import {GraduationCap,Play,BookOpen,CheckCircle2,ArrowLeft,ArrowRight,ChevronRight,ChevronLeft,Sparkles,Search,MonitorPlay,Clock,ExternalLink,NotebookPen,ListVideo,Bookmark,BookmarkCheck,Volume2,Maximize2,Info,PanelRightClose,PanelRightOpen} from 'lucide-react';
-const labels={automation:'AI Automation Engineering',sales:'B2B Sales Mastery',english:'Executive English',psychology:'Psychology, EQ & Leadership',ielts:'IELTS A–Z Preparation'};
+const labels={automation:'AI Automation Engineering',sales:'B2B Sales Mastery',english:'Executive English',psychology:'Psychology, EQ & Leadership',ielts:'IELTS A–Z Preparation',python:'Python Engineering A–Z',gohighlevel:'GoHighLevel CRM & Automation',agentic:'Agentic AI Engineering'};
 const tasks={
 automation:['List the inputs, workflow nodes and outputs shown in the demonstration.','Rebuild one workflow in your own n8n workspace.','Add an error-handling case and explain how you tested it.'],
 sales:['Write five discovery questions relevant to a real prospect.','Role-play the conversation and record your opening.','Create follow-up notes and a specific next-step request.'],
 english:['Write five useful expressions you heard and what they mean.','Speak for one minute using two of those expressions.','Record yourself and improve clarity or pronunciation.'],
 psychology:['Identify one practical behavioral principle from the lesson.','Write a respectful response to a difficult situation.','Explain when this principle may be misused and how to act ethically.'],
+python:['Rebuild the Python example from scratch in your development environment.','Add type hints and edge-case tests with pytest.','Publish a documented solution and explain design trade-offs.'],
+gohighlevel:['Recreate the workflow in a HighLevel test account.','Document consent handling, input mapping and automation triggers.','Record a client-ready handover and a QA walkthrough.'],
+agentic:['Build the agent graph with validated tool schemas.','Add human approval, prompt-injection tests and tracing.','Evaluate failure cases and publish architecture decisions.'],
 ielts:['Summarize the relevant IELTS task instructions.','Practise an original question and note where your answer could improve.','Compare your attempt against public IELTS assessment guidance.']
 };
 const tabs=['Overview','Chapters','Practice','Notes'];
