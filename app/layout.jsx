@@ -1,0 +1,1 @@
+import './globals.css';export const metadata={title:'Success Academy | Professional Mastery',description:'90-day academy — AI Automation, B2B Sales, Executive English and Leadership',icons:{icon:'/icon.svg'}};export default function Layout({children}){return <html lang='en'><body>{children}</body></html>}
