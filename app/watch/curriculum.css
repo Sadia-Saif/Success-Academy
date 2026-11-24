@@ -79,3 +79,9 @@
 .udVideoMode{display:flex;gap:9px;margin:14px 0 7px;flex-wrap:wrap}.udVideoMode button{border:1px solid #dedcf0;background:#fff;color:#657292;border-radius:9px;padding:10px 14px;display:flex;gap:8px;align-items:center;font-size:11px}.udVideoMode button.active{color:#5f50cb;background:#edeaff;border-color:#bcb0f3;font-weight:800}
 @media(max-width:680px){.narratedCanvas{aspect-ratio:auto;min-height:430px}.narratedScene{padding:10px 23px}.narratedTop,.narratedBottom{padding:18px}.narratedScene h2{font-size:23px}.narratedScene>p{font-size:12px;max-height:155px}.narratedHighlights>div{padding:8px;font-size:10px}.narratedBigPlay{height:48px;width:48px;right:6%;bottom:14%}.narratedBigPlay svg{width:22px}.narratedControls{gap:5px;padding:10px;flex-wrap:wrap}.narratedControls button{padding:9px}.narratedControls .narratedPlayToggle{font-size:11px}.narratedHelp{padding:4px 13px 13px;font-size:10px}.narratedTop{font-size:9px}.narratedBottom{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.narratedScene{animation:none}.narratedBigPlay{transition:none}}
+
+/* YouTube topic-by-topic video discovery and source transparency */
+.udVideoLookup{display:flex;gap:10px;align-items:flex-start;background:#f6f3ff;border:1px solid #dfd8fa;color:#6355b8;border-radius:11px;padding:14px;font-size:12px;line-height:1.7;margin:16px 0}
+.udVideoLookup>svg{flex-shrink:0;margin-top:2px}
+.udVideoSearchLink{display:inline-flex;align-items:center;gap:8px;border:1px solid #ddd4f8;background:#fff;color:#6452c2;font-size:12px;border-radius:9px;padding:11px 13px;margin:4px 0 15px;font-weight:700}
+.udVideoSearchLink:hover{background:#eeeaff}
