@@ -1,0 +1,1 @@
+import './watch.css';export const metadata={title:'Watch Lessons | Success Academy',description:'Immersive in-platform lesson player with guided playlists, chapter navigation, practice and study notes'};export default function Layout({children}){return children;}

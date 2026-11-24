@@ -91,3 +91,36 @@ button,input,textarea{font:inherit}button{cursor:pointer}a{text-decoration:none;
 @media(max-width:700px){.hubHero{padding:25px}.hubHeroOrb{display:none}.hubMetrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.hubCourses{gap:10px}.hubCourseArt{height:120px}.hubCourseIcon{height:67px;width:67px}.hubCourseInner{padding:13px}.hubCourseInner strong{font-size:12px}.hubCourseInner p{font-size:11px}.hubHeader>span{font-size:9px}.hubEdition{display:none}.hubLearningNav{align-items:start;flex-direction:column}.hubLessonHero{padding:23px}.hubLessonHero>span{display:none}.hubResources{grid-template-columns:1fr}.hubPhases{grid-template-columns:1fr}.hubDays{grid-template-columns:repeat(7,1fr)}.hubNext{flex-wrap:wrap}.hubMain{padding:23px 14px}}
 @media(max-width:500px){.hubHero h1{font-size:30px}.hubHeroTag{font-size:9px}.hubCourses{grid-template-columns:1fr}.hubCourseArt{height:155px}.hubCourseIcon{height:88px;width:88px}.hubMetrics .hubMetric{padding:15px}.hubMetric b{font-size:25px}.hubSectionTitle{align-items:start;flex-direction:column}.hubPanel{padding:17px}.hubLearning .hubStageTabs button{font-size:0;padding:11px}.hubLearning .hubStageTabs button svg{width:17px;height:17px}.hubClassGrid{gap:13px}.hubDays{grid-template-columns:repeat(6,1fr)}.hubHeader{padding:0 12px}.hubHeader>span{font-size:8px}.hubFooter{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Immersive video studio integration */
+.hubVideoPromo{display:flex;align-items:center;gap:17px;background:linear-gradient(108deg,#232d69,#4c3ab0 62%,#6257d3);color:#fff;border-radius:17px;border:1px solid #776ce1;padding:23px 26px;margin:18px 0 4px;box-shadow:0 16px 33px #403b9d32}
+.hubPromoMark{height:60px;width:60px;flex-shrink:0;display:grid;place-items:center;border-radius:14px;border:1px solid #ffffff77;background:#ffffff22}
+.hubVideoPromo>div:nth-child(2){flex:1}.hubVideoPromo span{color:#c3bcff;letter-spacing:1px;font-size:10px;font-weight:800}.hubVideoPromo h3{font:800 19px Manrope;letter-spacing:-.5px;margin:8px 0 4px}.hubVideoPromo p{font-size:11px;line-height:1.8;color:#d7d3ff;margin:0}
+.hubVideoPromo .hubButton{background:#fff;color:#4f43b4;border-color:white;white-space:nowrap}
+.hubInlinePlayer{aspect-ratio:16/9;width:100%;overflow:hidden;background:#12183d;border-radius:13px;margin:20px 0 13px}
+.hubInlinePlayer iframe{width:100%;height:100%;display:block;border:0}
+.hubInlinePlayer.large{margin-top:0}
+.hubPlayerPoster{height:100%;width:100%;border:0;display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;text-align:center;color:white;padding:18px;background:radial-gradient(circle at 70% 20%,#6f62c766,transparent 53%),linear-gradient(140deg,#111c4e,#202157,#34206b)}
+.hubPlayerPoster>span{height:70px;width:70px;display:grid;place-items:center;border-radius:50%;border:1px solid #ffffff7c;background:#ffffff2d;box-shadow:0 0 28px #b6a2ff55}
+.hubPlayerPoster strong{font:800 clamp(16px,2vw,25px) Manrope;max-width:90%}
+.hubPlayerPoster small{color:#c3bce6;font-size:11px}
+.hubPlayerPoster em{font-size:12px;color:#e2d9ff;font-style:normal;border:1px solid #ffffff67;background:#ffffff24;border-radius:10px;padding:9px 13px}
+.hubPlaylistTitle{display:flex;align-items:center;justify-content:space-between;gap:13px}
+.hubPlaylistTitle>strong{font-size:13px}.hubPlaylistTitle a{color:#6652c9;display:flex;align-items:center;gap:7px;font-size:11px}
+.hubInlinePlaylist{display:grid;gap:7px;margin:17px 0}
+.hubInlinePlaylist button{display:flex;gap:9px;align-items:center;text-align:left;border:1px solid #e3e7f1;border-radius:10px;background:#f9faff;padding:13px;color:#60718c;font-size:12px}
+.hubInlinePlaylist button.active{background:#f0ebff;border-color:#a994ef;color:#5b4cb9}
+.hubInlinePlaylist button span{flex:1}.hubInlinePlaylist button small{font-size:10px}
+.hubLibraryLayout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,.8fr);gap:16px;align-items:start}
+.hubLibraryLayout .hubPanel>h2{margin:18px 0 5px}.hubLibraryLayout .hubPanel>p{font-size:12px;color:#677592;line-height:1.85}
+.hubInlineChapters{display:flex;flex-wrap:wrap;gap:8px;margin:19px 0}
+.hubInlineChapters button{border:1px solid #dfd9fa;background:#f2efff;border-radius:9px;display:flex;align-items:center;gap:7px;color:#6452c3;font-size:11px;padding:10px}
+.hubLibraryPlaylist{display:grid;gap:7px;margin:17px 0}
+.hubLibraryPlaylist button{width:100%;display:flex;align-items:center;gap:11px;text-align:left;border:1px solid #e4e8f1;background:#fbfcff;border-radius:12px;padding:12px;color:#2b3962}
+.hubLibraryPlaylist button.active{border-color:#a999f2;background:#f2efff}
+.hubLibraryPlaylist button>span{display:grid;place-items:center;height:41px;width:41px;border-radius:10px;background:linear-gradient(130deg,#526ff3,#a16fea);color:white;flex-shrink:0}
+.hubLibraryPlaylist button>div{flex:1}.hubLibraryPlaylist button b{font-size:12px;display:block;line-height:1.4}.hubLibraryPlaylist button small{display:block;color:#8792aa;font-size:10px;margin-top:5px}
+.hubLibraryLayout h4{font-size:13px;margin-top:25px}.hubReferenceLink{display:flex;justify-content:space-between;align-items:center;gap:13px;padding:11px 0;border-bottom:1px solid #e6e9f2;color:#6354b8;font-size:11px}
+.hubNoVideo{height:100%;display:grid;place-items:center;color:white;font-size:13px}
+@media(max-width:1050px){.hubLibraryLayout{grid-template-columns:1fr}.hubVideoPromo{flex-wrap:wrap}}
+@media(max-width:650px){.hubVideoPromo{padding:17px;gap:12px}.hubVideoPromo .hubButton{width:100%}.hubVideoPromo h3{font-size:16px}.hubPromoMark{width:46px;height:46px}.hubInlinePlayer{border-radius:9px}.hubPlayerPoster>span{height:45px;width:45px}.hubPlayerPoster>span svg{width:22px}.hubPlayerPoster strong{font-size:14px}.hubPlayerPoster{gap:6px;padding:9px}.hubPlayerPoster em{padding:7px;font-size:10px}.hubPlaylistTitle{align-items:start;flex-direction:column}.hubLibraryLayout .hubPanel{padding:14px}}
