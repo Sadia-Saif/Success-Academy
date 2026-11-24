@@ -47,3 +47,9 @@ Visit `/ielts` to access a dedicated 90-day IELTS preparation course including:
 - Optional IELTS tutor mode using the existing protected AI endpoint (credentials and production-grade authentication required)
 
 **Not an official IELTS product:** No association with IELTS test owners is implied, and built-in practice scores or AI advice are not official IELTS band scores. Real audio, official mock tests and exam-style scoring should be accessed from official providers. Progress is stored in local browser storage and not synced across devices.
+
+## Unified Learning Dashboard
+
+The root route `/` is now the single front door for all five courses: AI Automation Engineering, B2B Sales, Executive English, Psychology/EQ and IELTS A–Z. It includes a unified course catalog, classroom, curated resource library, progress overview, course roadmap and secure optional AI teaching agent. The existing `/advanced` and `/ielts` routes remain accessible for specialist practice.
+
+On first browser load the dashboard imports progress from existing local browser keys (`sa-advanced-v1`, `success-ielts-v1`) into `sa-unified-v1`. The unified dashboard writes completion to its own state and mirrors it to legacy course storage for interoperability; progress synchronization is device-local and cannot resolve simultaneous changes across tabs or devices. IELTS Academic vs General Training is supported in the course interface; overview completion is combined per course day. The 450 sessions represent structured curricula with reusable lesson formats, not 450 independently reviewed full-length courses or 450 video lectures. Live AI remains disabled until server-side credentials and stronger public access protection are configured.
