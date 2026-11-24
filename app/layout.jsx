@@ -1,1 +1,3 @@
-import './globals.css';export const metadata={title:'Success Academy | Professional Mastery',description:'90-day academy — AI Automation, B2B Sales, Executive English and Leadership',icons:{icon:'/icon.svg'}};export default function Layout({children}){return <html lang='en'><body>{children}</body></html>}
+import './globals.css';
+export const metadata={title:'Success Academy | Professional Mastery',description:'From scratch to advanced AI automation, sales, executive English and ethical leadership',icons:{icon:'/icon.svg'}};
+export default function Layout({children}){return <html lang="en"><body>{children}<a href="/advanced" style={{position:'fixed',right:17,bottom:17,zIndex:9999,background:'linear-gradient(110deg,#496fff,#925bed)',color:'white',fontWeight:800,fontSize:12,padding:'13px 17px',border:'1px solid #c1aaff',borderRadius:13,boxShadow:'0 11px 34px #0008',textDecoration:'none'}}>✦ Open Advanced Academy</a></body></html>}

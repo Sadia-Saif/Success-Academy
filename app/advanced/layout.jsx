@@ -1,0 +1,1 @@
+import './advanced.css';export const metadata={title:'Success Academy | Advanced Masterclasses & AI Teacher'};export default function Layout({children}){return children;}

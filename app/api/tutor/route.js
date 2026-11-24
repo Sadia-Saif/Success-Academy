@@ -1,0 +1,27 @@
+export const runtime='nodejs';
+const modes=['explain','socratic','quiz','debug','review','project','interview','roadmap'];
+const maxChars=3500;
+const ipBuckets=new Map();
+function extract(response){const arr=response?.output||[];return arr.filter(x=>x.type==='message').flatMap(x=>x.content||[]).filter(x=>x.type==='output_text').map(x=>x.text).join('\n').trim()}
+export async function POST(req){
+  const apiKey=process.env.OPENAI_API_KEY;
+  if(!apiKey)return Response.json({error:'AI_TUTOR_NOT_CONFIGURED',message:'The AI teaching agent needs a server-side OPENAI_API_KEY configured in Vercel project settings. No key is sent from your browser.'},{status:503});
+  const gate=process.env.TUTOR_ACCESS_CODE;
+  if(!gate)return Response.json({error:'AI_TUTOR_ACCESS_NOT_CONFIGURED',message:'For safe public use, configure TUTOR_ACCESS_CODE in Vercel environment variables before enabling paid AI calls.'},{status:503});
+  if(req.headers.get('x-tutor-access')!==gate)return Response.json({error:'UNAUTHORIZED',message:'Enter the teaching agent access code to start a live AI session.'},{status:401});
+  const ip=req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()||'local';
+  const now=Date.now();if(ipBuckets.size>5000)ipBuckets.clear();
+  const bucket=ipBuckets.get(ip)||{count:0,start:now};if(now-bucket.start>3600000){bucket.count=0;bucket.start=now}bucket.count++;ipBuckets.set(ip,bucket);
+  if(bucket.count>35)return Response.json({error:'RATE_LIMIT',message:'Hourly AI tutor request limit reached. Continue with the offline lessons.'},{status:429});
+  let body;try{body=await req.json()}catch{return Response.json({error:'INVALID_JSON'},{status:400})}
+  const {mode,track,day,topic,message,history}=body||{};
+  if(!modes.includes(mode)||!['automation','sales','english','psychology'].includes(track)||!Number.isInteger(day)||day<1||day>90||typeof topic!=='string'||topic.length>150||typeof message!=='string'||message.trim().length<1||message.length>maxChars)return Response.json({error:'INVALID_INPUT',message:'Enter a valid mode, topic and message under 3500 characters.'},{status:400});
+  const h=Array.isArray(history)?history.slice(-8).filter(x=>x&&['user','assistant'].includes(x.role)&&typeof x.content==='string').map(x=>({role:x.role,content:x.content.slice(0,1200)})):[];
+  const instructions=`You are the Success Academy teaching agent: a patient, rigorous, encouraging senior instructor. Teach real competence, not shortcuts. Track: ${track}; day: ${day}; topic: ${topic}; mode: ${mode}. Tailor to a learner with a computer science background, B2B sales experience and an ambition to work internationally. For beginners, use plain English and a vivid analogy before introducing technical terms. For advanced requests, emphasize architecture, implementation, verification, risks, security, edge cases, and real business constraints. Never claim you executed code or accessed an account. Do not invent external resources or cite unverifiable facts. When the student is incorrect, gently identify why and give a smaller hint before a complete solution. In socratic mode ask one thoughtful question at a time. In quiz mode ask one question, wait for response and then assess with an explanation. In project mode include acceptance criteria and a test checklist. In debug mode ask for the actual error and minimal reproduction, then offer diagnostic steps. In review mode use clear rubric: correctness, clarity, resilience, ethics and evidence. In interview mode behave as an interviewer and wait for the student's answer. Prefer actionable explanations of 120-300 words, with compact lists if useful. No manipulative sales tactics.`;
+  try{
+    const res=await fetch('https://api.openai.com/v1/responses',{method:'POST',headers:{Authorization:'Bearer '+apiKey,'Content-Type':'application/json'},body:JSON.stringify({model:process.env.OPENAI_TUTOR_MODEL||'gpt-4.1-mini',instructions,input:[...h,{role:'user',content:message}],max_output_tokens:650}),signal:AbortSignal.timeout(35000)});
+    if(!res.ok){const err=await res.text();console.error('Tutor provider error',res.status,err.slice(0,250));return Response.json({error:'MODEL_UNAVAILABLE',message:'The AI provider could not complete this request. Verify the configured model and API billing.'},{status:502})}
+    const out=await res.json();const reply=extract(out);if(!reply)return Response.json({error:'EMPTY_AI_RESPONSE'},{status:502});
+    return Response.json({reply,model:out.model||'configured tutor model'});
+  }catch(error){console.error('Tutor request error',error?.name||'unknown');return Response.json({error:'TUTOR_TIMEOUT',message:'The tutor could not respond right now. Try again.'},{status:504})}
+}
