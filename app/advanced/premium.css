@@ -1,0 +1,187 @@
+/* Success Academy Studio — premium product interface, version 6
+   Accessible light surfaces, vivid cobalt-violet identity, responsive workspace */
+:root{color-scheme:light}
+body{background:#f4f6fd!important;color:#18224a!important;-webkit-font-smoothing:antialiased}
+.academy{--ink:#1a2854;--muted:#667397;--line:#e1e6f4;--sheet:#fff;--accent:#504ee9;--sky:#427bfa;--purple:#985cf0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse 45% 36% at 97% 1%,#e8dfff 0%,transparent 80%),radial-gradient(ellipse 55% 43% at 25% 83%,#e9f1ff 0%,transparent 80%),#f5f7fd}
+.academy .side{background:linear-gradient(180deg,#222c68 0%,#293774 48%,#302965 100%);border-color:#ffffff18;box-shadow:8px 0 25px #192b5530}
+.academy .identity{margin-bottom:35px}
+.academy .monogram{background:linear-gradient(135deg,#477cff,#a978f6);box-shadow:0 12px 24px #13185f44;border:1px solid #ffffff47}
+.academy .identity b,.academy .sideFooter b{color:#fff}
+.academy .identity small,.academy .sideHint{color:#b6c4f9}
+.academy .sideNav{color:#d1d9fa}
+.academy .sideNav:hover{background:#ffffff20;border-color:#ffffff32;transform:translateX(3px)}
+.academy .sideNav.selected,.academy .sideNav.trackSelected{background:linear-gradient(105deg,#4e6af4ab,#8a60eb77);border-color:#c2c8ff75;color:#fff;box-shadow:0 7px 18px #14195138}
+.academy .sideFooter{border-color:#ffffff26;color:#c9caff}
+.academy .sideFooter small{color:#b8c0e1}
+.academy .top{height:76px;background:#ffffffdc;border-bottom:1px solid #e4e7f1;box-shadow:0 6px 25px #1726570a}
+.academy .toggle,.academy .back{color:#465179}
+.academy .topCenter{color:#838ca9;letter-spacing:1.5px}
+.academy .pro{background:#f2edff;color:#6a4cd6;border:1px solid #e4d7ff;font-weight:800}
+.academy .round{background:linear-gradient(125deg,#536ffa,#b16fee);color:white}
+.academy .main{max-width:1580px;padding:36px clamp(20px,3vw,51px) 35px}
+.academy .eyebrow{color:#6d64c6}
+.academy .dot{background:#7770fb;box-shadow:0 0 0 4px #8278f627}
+.academy .hero{background:linear-gradient(114deg,#365dec 0%,#564bd8 54%,#8564e9 100%);border:1px solid #7c7deb;border-radius:24px;box-shadow:0 25px 52px #5a62d03e;min-height:288px}
+.academy .hero:before{border-color:#ffffff41;box-shadow:0 0 0 49px #ffffff12,0 0 0 99px #ffffff08}
+.academy .hero small,.academy .hero p{color:#f1efff}
+.academy .hero h1{color:white;max-width:760px}
+.academy .hero em{background:linear-gradient(120deg,#fff,#e7e2ff);background-clip:text}
+.academy .hero .primary{background:#fff;color:#4c46c2;border-color:#ffffffdd;box-shadow:0 10px 25px #34218744}
+.academy .hero .ghost{background:#ffffff25;border-color:#ffffff81;color:#fff}
+.academy .orb{box-shadow:inset -12px -15px 23px #6040ab55,0 24px 38px #252dba54,0 0 40px #ffffff54}
+.academy .metric,.academy .panel{background:#fff;border:1px solid #e2e7f2;box-shadow:0 7px 26px #263e7720,0 1px 3px #263e7710;border-radius:19px}
+.academy .metric{padding:22px 25px;transition:transform .2s,box-shadow .2s}
+.academy .metric:hover{transform:translateY(-3px);box-shadow:0 15px 34px #263e7724}
+.academy .metric small{color:#7d86a4;font-size:10px}
+.academy .metric strong{color:#1f2c5b;font:800 31px Manrope;letter-spacing:-1px}
+.academy .metric span{color:#818ca8}
+.academy .navigation{margin:19px 0 19px}
+.academy .trackSelect button,.academy .levels button{background:white;color:#606d94;border:1px solid #e0e5f0;box-shadow:0 2px 8px #1d34780a;padding:11px 13px;border-radius:11px}
+.academy .trackSelect button:hover,.academy .levels button:hover{border-color:#9384ed;color:#5b4ac8}
+.academy .trackSelect button.active,.academy .levels button.active{background:linear-gradient(110deg,#5469f2,#7b5be4);color:#fff;border-color:#7064ea;box-shadow:0 7px 17px #625de233}
+.academy .dayPicker{color:#35416c}
+.academy .dayPicker button{background:white;color:#5552c9;border:1px solid #dfe4f0;box-shadow:0 2px 7px #172c5b14}
+.academy .courseHeading h2{color:#1b2855;letter-spacing:-1px}
+.academy .courseHeading p{color:#747d9a}
+.academy .courseHeadingEnd>span{background:#fff;color:#63699a;border-color:#e0e4f0}
+.academy .courseHeadingEnd .complete{color:#16856a;border-color:#bdebdc;background:#effbf8}
+.academy .stageTabs{border-color:#edf0f6}
+.academy .stageTabs button{color:#66739a;background:#f4f6fc;border:1px solid #e3e8f3;border-radius:10px;font-weight:700;transition:.2s}
+.academy .stageTabs button:hover{background:#eaeaff;color:#5d53d2}
+.academy .stageTabs button.active{background:#edeaff;border-color:#b0a6fa;color:#5146c7;box-shadow:inset 0 -3px #7662ea}
+.academy .panel h3,.academy .panel h2{color:#1b2b58}
+.academy .bodyText,.academy article>p{color:#536481;font-size:13px}
+.academy .bodyText b{color:#252f54}
+.academy .foundationList>div{background:#f6f7fd;border:1px solid #e3e8f2;color:#29345c}
+.academy .foundationList span{color:#705bd7}
+.academy .explainBox,.academy .asideInfo{background:#f2f0ff;border:1px solid #e2dafa;color:#6153bd}
+.academy .explainBox b,.academy .asideInfo b{color:#3d37a1}
+.academy .explainBox p,.academy .asideInfo p{color:#576184}
+.academy .lessonPanel pre{background:#152448;border-color:#263e6e;color:#e7edff;box-shadow:inset 0 1px #ffffff0f}
+.academy .taskList li,.academy .scenario p{color:#4f5d7c}
+.academy .flow{background:#f6f7fe;border:1px solid #e7e9f5}
+.academy .flow>div{background:#ebeaff;border:1px solid #cec7fa;color:#5345bc}
+.academy .flow>div small{color:#7e76af}
+.academy .scenario{background:#f1f2ff;border-left:4px solid #7163e9;color:#303e6c}
+.academy .lessonPanel textarea,.academy textarea,.academy .sidebarPanel input{background:#fff;border:1px solid #dce2f0;color:#243359;box-shadow:inset 0 1px 2px #263e7706}
+.academy textarea::placeholder,.academy input::placeholder{color:#9ca5bc}
+.academy textarea:focus,.academy input:focus{outline:3px solid #7664ee26;border-color:#8978eb}
+.academy .answer{background:#f6f7fd;border:1px solid #e2e5f0;color:#33416b}
+.academy .answer:hover{border-color:#9685ef;background:#efedff}
+.academy .answer.picked{background:#e6e2ff;border-color:#796ae4;color:#493db6}
+.academy .goodFeedback{color:#16856a}
+.academy .badFeedback{color:#b94343}
+.academy .sidebarPanel .checkRow,.academy .sideMode,.academy .milestone{border-color:#e8ebf3;color:#53617f}
+.academy .checkRow span{background:#f2efff;border:1px solid #d8cffc;color:#6651c4}
+.academy .footnote{color:#7f8aa5!important}
+.academy .ghost{background:#f0eeff;border:1px solid #d9d4fa;color:#6351c7;box-shadow:none}
+.academy .ghost:hover{background:#e6e2ff}
+.academy .primary{background:linear-gradient(108deg,#416cff,#8255e9);color:white;border:1px solid #6566e9;box-shadow:0 8px 21px #5f60e632}
+.academy .primary:hover{box-shadow:0 12px 25px #6557dd52}
+.academy .videoMini a,.academy .videoCard{background:white;border:1px solid #e0e5f1;color:#25335e}
+.academy .videoMini a:hover,.academy .videoCard:hover{border-color:#9f8ff1}
+.academy .videoMini small{color:#7f85a4}
+.academy .playIcon{background:#f0eaff;color:#6953d3}
+.academy .tutor{background:white}
+.academy .tutorHead{border-color:#e8ebf5}
+.academy .tutorHead h3{color:#22315d}
+.academy .tutorHead p{color:#7986a4}
+.academy .liveBadge{background:#f5f0ff;color:#775ed3;border-color:#e5dbff}
+.academy .modeGrid{border-color:#eef0f7}
+.academy .modeGrid button{background:#f6f7fc;border-color:#e3e7f1;color:#607092}
+.academy .modeGrid button.active{background:#e8e4ff;border-color:#ae9ff6;color:#5546c4}
+.academy .chatBody{background:linear-gradient(175deg,#fff,#faf9ff)}
+.academy .emptyOrb{background:linear-gradient(135deg,#e6e3ff,#dcecff);color:#6960db;box-shadow:0 0 30px #9275ee22}
+.academy .emptyChat h3{color:#243158}
+.academy .emptyChat p{color:#6e7897}
+.academy .suggestions button{background:#f5f6fc;color:#465479;border-color:#e3e6f1}
+.academy .suggestions button:hover{background:#edebff;border-color:#b5a6f5}
+.academy .message.me{background:linear-gradient(120deg,#526df3,#795ee2);color:#fff}
+.academy .message.bot{background:#f0f1fb;border-color:#e1e6f2;color:#2c3c66}
+.academy .message small{color:inherit;opacity:.7}
+.academy .thinking{color:#6456ce}
+.academy .composer{background:white}
+.academy .composer textarea{background:#fbfcff}
+.academy .notice{color:#995a38;background:#fff4e9}
+.academy .fieldlabel{color:#5a6689}
+.academy .sidebarPanel code{color:#634aca}
+.academy .external{color:#6250ce}
+.academy .phaseCard{background:#f8f9ff;border:1px solid #e3e7f2}
+.academy .phaseCard b{color:#27345d}
+.academy .phaseCard p{color:#67748e}
+.academy .phaseCard small{color:#6657cf}
+.academy .dayGrid button{background:#f7f8fd;color:#435177;border:1px solid #e2e6f0}
+.academy .dayGrid button small{color:#929bb4}
+.academy .dayGrid button:hover{background:#ecebff;border-color:#b7abf5}
+.academy .dayGrid button.active{background:#6756dd;border-color:#6756dd;color:white}
+.academy .dayGrid button.done{border-color:#46bc9a;background:#ecfbf5}
+.academy .videoInfo small,.academy .videoInfo>span{color:#7765d5}
+.academy .videoInfo>b{color:#253459}
+.academy .videoInfo p{color:#66728c}
+.academy .videoArt{color:white}
+.academy .search{color:#687398}
+.academy .search input{background:white;color:#28345a;border:1px solid #dde3f0;border-radius:11px;padding:12px 14px}
+.academy footer{border-color:#e4e7f1;color:#8d96ae}
+.academy :where(button,a,input,textarea):focus-visible{outline:3px solid #8873fc!important;outline-offset:3px!important}
+.academy button{transition:transform .2s,background .2s,border-color .2s}
+.academy .smallAccent{display:inline-flex;align-items:center;gap:7px;color:#6958ce;letter-spacing:1.5px;font-size:10px;font-weight:800}
+.academy .homeGrid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.88fr);gap:20px;margin-top:22px}
+.academy .homePrimary{background:#fff;border:1px solid #e1e6f2;border-radius:20px;padding:27px;box-shadow:0 10px 27px #263e7713}
+.academy .homeSectionLabel{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.academy .inlineAction{border:0;background:none;color:#6356c7;display:flex;align-items:center;gap:7px;font-size:12px;font-weight:800}
+.academy .homePrimary h2{font:800 clamp(21px,2vw,27px) Manrope;margin:18px 0 6px;letter-spacing:-.9px}
+.academy .homePrimary>p{font-size:12px;line-height:1.9;color:#72809c;margin-bottom:20px}
+.academy .homeCourses{display:grid;gap:10px}
+.academy .homeCourse{display:flex;gap:14px;align-items:center;text-align:left;padding:14px;border:1px solid #e4e8f2;background:#fbfcff;border-radius:13px;color:#29365e;width:100%;transition:.25s}
+.academy .homeCourse:hover{transform:translateY(-3px);border-color:#b1a3f4;box-shadow:0 10px 20px #4444bb1b;background:white}
+.academy .homeCourseArt{height:66px;width:74px;flex-shrink:0;display:grid;place-items:center;color:white;border-radius:13px;box-shadow:0 11px 20px #3c4ed32e;position:relative;overflow:hidden}
+.academy .homeCourseArt:after{content:'';position:absolute;right:-20px;top:-20px;height:80px;width:80px;border:1px solid #ffffff77;border-radius:50%;box-shadow:0 0 0 15px #ffffff1a}
+.academy .homeCourseMain{flex:1;min-width:0}
+.academy .homeCourseMain b{font-size:13px;display:block;margin-bottom:6px}
+.academy .homeCourseMain>span{display:block;color:#7d88a6;font-size:11px}
+.academy .courseProgress{height:5px;border-radius:10px;background:#e8eafb;margin-top:11px;overflow:hidden}
+.academy .courseProgress i{display:block;height:100%;border-radius:10px}
+.academy .homeCourse>svg{color:#7d6fdd;flex-shrink:0}
+.academy .homeRight{display:grid;gap:18px}
+.academy .dailyCard{position:relative;overflow:hidden;border-radius:20px;padding:27px;background:linear-gradient(135deg,#2f59d8,#6353d8 65%,#8059d6);color:white;box-shadow:0 16px 34px #554ecc40}
+.academy .dailyCard:after{content:'';position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;border:1px solid #ffffff40;box-shadow:0 0 0 25px #ffffff13,0 0 0 53px #ffffff10;pointer-events:none}
+.academy .dailyCard .smallAccent{color:#e0dcff}
+.academy .dailyCard h3{font:800 22px Manrope;line-height:1.35;letter-spacing:-.7px;color:white;margin:20px 0 10px;max-width:260px}
+.academy .dailyCard p{font-size:12px;line-height:1.8;color:#e2e4ff;max-width:300px}
+.academy .dailyCard .primary{background:white;color:#5249c5;border-color:white;position:relative;z-index:1;margin-top:6px}
+.academy .dailySymbol{height:53px;width:53px;display:grid;place-items:center;border-radius:13px;background:#ffffff30;border:1px solid #ffffff50;margin-top:22px}
+.academy .mentorCard{border:1px solid #e2e5f3;background:linear-gradient(140deg,#fff,#faf8ff);border-radius:20px;padding:25px;box-shadow:0 8px 21px #263e7710}
+.academy .mentorIcon{width:47px;height:47px;border-radius:12px;display:grid;place-items:center;background:#ece5ff;color:#7457df}
+.academy .mentorCard h3{margin:15px 0 8px;color:#23315e;font-size:17px}
+.academy .mentorCard p{font-size:12px;line-height:1.8;color:#73809d}
+.academy .mentorCard small{display:block;margin-top:13px;font-size:10px;color:#8a93a9}
+.academy .commandTrigger,.academy .focusToggle{border:1px solid #e0e4ef;background:#f7f8fc;color:#6d7896;border-radius:10px;padding:10px 12px;display:flex;gap:8px;align-items:center;font-size:11px}
+.academy .commandTrigger{min-width:205px;justify-content:flex-start}
+.academy .commandTrigger kbd{margin-left:auto;color:#979bbb;background:white;padding:4px 5px;border:1px solid #e4e6f0;border-radius:4px}
+.academy .focusToggle.on{color:#6654da;background:#ecebff;border-color:#cfc6ff}
+.academy .commandBackdrop{position:fixed;inset:0;background:#1420449c;backdrop-filter:blur(5px);z-index:99;display:flex;justify-content:center;align-items:flex-start;padding:12vh 18px 20px}
+.academy .commandPalette{background:white;border:1px solid #e5e6f2;border-radius:19px;width:min(580px,100%);overflow:hidden;box-shadow:0 35px 95px #101d5480;color:#2a385f}
+.academy .commandInput{display:flex;align-items:center;gap:12px;padding:16px 19px;border-bottom:1px solid #eceefa;color:#7565db}
+.academy .commandInput input{border:0!important;box-shadow:none!important;background:none;flex:1;min-width:0;padding:6px 0;color:#263153;font-size:14px;outline:0!important}
+.academy .commandInput button{border:0;background:#f2f1fb;border-radius:7px;color:#6b7190;padding:7px}
+.academy .commandResults{max-height:52vh;overflow:auto;padding:12px}
+.academy .commandResults>span{display:block;font-size:10px;font-weight:800;color:#9b9cb7;letter-spacing:1px;padding:9px 11px}
+.academy .commandResults button{width:100%;display:flex;align-items:center;gap:11px;padding:13px;border:0;border-radius:10px;background:none;text-align:left;color:#384667;font-size:12px}
+.academy .commandResults button:hover{background:#f1f0ff;color:#5a4dd0}
+.academy .commandResults button>span{flex:1}
+.academy .commandResults button>svg:last-child{margin-left:auto;color:#a59abc}
+.academy .commandResults button small{color:#9497b2}
+.academy .commandResults p{padding:10px;font-size:12px;color:#717d96}
+.academy .commandBottom{background:#fafbff;padding:12px 17px;font-size:10px;color:#929ab0;border-top:1px solid #eceefa}
+.academy .skipLink{position:fixed;top:-60px;left:45%;z-index:101;background:#514cc4;color:#fff;padding:12px 20px;border-radius:9px}
+.academy .skipLink:focus{top:9px}
+.academy.focusMode .side{margin-left:-258px}
+.academy.focusMode .hero,.academy.focusMode .kpis,.academy.focusMode .homeGrid{display:none}
+.academy.focusMode .main{max-width:1150px}
+.academy.focusMode .bodyGrid{grid-template-columns:minmax(0,1fr) 230px}
+@media(min-width:1051px){.academy .side{width:262px}.academy.sideCollapsed .side{margin-left:-262px}}
+@media(max-width:1280px){.academy .topCenter{display:none}.academy .commandTrigger{margin-left:auto}.academy .homeGrid{grid-template-columns:minmax(0,1.35fr) minmax(250px,.9fr)}}
+@media(max-width:1050px){.academy .side{width:258px;margin-left:-258px}.academy.sideCollapsed .side{margin-left:0}.academy.focusMode .side{margin-left:-258px}.academy .homeGrid{grid-template-columns:1fr}.academy .homeRight{grid-template-columns:1fr 1fr}}
+@media(max-width:780px){.academy .heroVisual{display:none}.academy .hero{padding:26px}.academy .commandTrigger{min-width:0;padding:10px}.academy .commandTrigger kbd{display:none}.academy .topCenter{display:none}.academy .homeRight{grid-template-columns:1fr}.academy .focusToggle span{display:none}.academy .navigation{align-items:flex-start}.academy .main{padding:25px 15px}.academy .panel{padding:20px}.academy.focusMode .bodyGrid{grid-template-columns:1fr}}
+@media(max-width:520px){.academy .top{padding:0 12px;gap:9px;height:66px}.academy .commandTrigger{font-size:0;gap:0}.academy .back{font-size:0}.academy .back svg{width:20px;height:20px}.academy .topRight{gap:7px}.academy .hero h1{font-size:28px}.academy .homePrimary{padding:18px}.academy .homeCourse{padding:10px}.academy .homeCourseArt{width:57px;height:60px}.academy .homeCourseMain b{font-size:11px}.academy .dailyCard{padding:21px}.academy .metric{padding:14px}.academy .metric strong{font-size:23px}.academy .courseHeading h2{font-size:25px}.academy .stageTabs{gap:5px}.academy .stageTabs button{font-size:0;padding:10px 11px}.academy .stageTabs button svg{width:18px;height:18px}.academy .commandBackdrop{padding:7vh 10px 10px}.academy .commandResults{max-height:65vh}}
+@media(prefers-reduced-motion:reduce){.academy .homeCourse,.academy .metric{transition:none!important}.academy .homeCourse:hover,.academy .metric:hover{transform:none!important}}

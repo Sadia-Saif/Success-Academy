@@ -1,1 +1,1 @@
-import './advanced.css';export const metadata={title:'Success Academy | Advanced Masterclasses & AI Teacher'};export default function Layout({children}){return children;}
+import './advanced.css';import './premium.css';export const metadata={title:'Success Academy Studio | Professional Learning',description:'A premium learning studio for AI automation, sales, communication and leadership'};export default function Layout({children}){return children;}
