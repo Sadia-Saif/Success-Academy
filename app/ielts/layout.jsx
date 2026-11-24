@@ -1,0 +1,1 @@
+import './ielts.css';import './lesson-extras.css';export const metadata={title:'IELTS A–Z Course | Success Academy',description:'90-day beginner-to-advanced IELTS preparation for Academic and General Training: Listening, Reading, Writing, Speaking and practice.'};export default function Layout({children}){return children;}

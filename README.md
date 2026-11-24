@@ -34,3 +34,16 @@ Set `OPENAI_API_KEY` and `TUTOR_ACCESS_CODE` in Vercel environment variables. Op
 ## Transparency
 
 The application provides an advanced **learning framework**, not 360 independently written textbook chapters or a verified video for each topic. Most sessions use topic-aware reusable teaching structures. External tutorials are hosted by their publishers. Real AI feedback requires configuration and will incur API usage costs. The offline assessment is not a professional certification. Completion does not guarantee employment or expertise.
+
+## IELTS A–Z Preparation
+
+Visit `/ielts` to access a dedicated 90-day IELTS preparation course including:
+
+- Academic and General Training selector
+- Seven learning phases from English fundamentals through test-day preparation
+- Four dedicated skills: Listening, Reading, Writing and Speaking
+- 90 numbered topic lessons with skills-specific teaching explanations, original reading practice drills, writing prompts, timed practices and learning journals
+- Official third-party IELTS and British Council preparation links; the app does not host official audio or exam papers
+- Optional IELTS tutor mode using the existing protected AI endpoint (credentials and production-grade authentication required)
+
+**Not an official IELTS product:** No association with IELTS test owners is implied, and built-in practice scores or AI advice are not official IELTS band scores. Real audio, official mock tests and exam-style scoring should be accessed from official providers. Progress is stored in local browser storage and not synced across devices.
