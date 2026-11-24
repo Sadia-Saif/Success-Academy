@@ -50,3 +50,32 @@
 .udPosterCTA{margin-top:16px;border:0;border-radius:10px;background:#fff;color:#4d47aa;padding:13px 19px;display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;box-shadow:0 9px 20px #15174466}
 .udPoster:hover .udPosterCTA{background:#ece9ff}
 @media(max-width:650px){.udPosterCTA{padding:9px 12px;margin-top:5px;font-size:10px}}
+
+
+/* Original daily visual lesson studio — all eight course curricula */
+.udPlayer.narratedPlayer{aspect-ratio:auto;max-height:none;overflow:visible;background:transparent;box-shadow:none}
+.narratedRoot{width:100%;border:1px solid #dcdff1;background:#fff;border-radius:17px;overflow:hidden;box-shadow:0 15px 36px #1d2d6325}
+.narratedCanvas{aspect-ratio:16/9;min-height:350px;position:relative;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;color:#fff;background:radial-gradient(circle at 88% 18%,#9075e970,transparent 39%),linear-gradient(123deg,#17265e,#34307d 65%,#6244b2)}
+.narratedCanvas:before{content:'';width:370px;height:370px;border:1px solid #ffffff20;border-radius:50%;position:absolute;right:-110px;top:-165px;box-shadow:0 0 0 54px #ffffff0c,0 0 0 105px #ffffff08;pointer-events:none}
+.narratedCanvas.slide-concept{background:radial-gradient(circle at 20% 15%,#4c98fc40,transparent 45%),linear-gradient(135deg,#122d5a,#2e398e,#6750b5)}
+.narratedCanvas.slide-scenario{background:radial-gradient(circle at 75% 40%,#27a3d655,transparent 46%),linear-gradient(130deg,#142c63,#245d86,#4f51a8)}
+.narratedCanvas.slide-example{background:radial-gradient(circle at 85% 20%,#c76efa48,transparent 42%),linear-gradient(130deg,#1e245e,#48367f,#7751aa)}
+.narratedCanvas.slide-practice{background:radial-gradient(circle at 15% 25%,#ffbd7140,transparent 42%),linear-gradient(120deg,#29316c,#5d4593,#805c9d)}
+.narratedCanvas.slide-summary{background:radial-gradient(circle at 80% 25%,#72d3b84d,transparent 43%),linear-gradient(115deg,#16385e,#2e5984,#5b56a1)}
+.narratedTop,.narratedBottom{position:relative;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 30px;color:#d9d6ff;font-size:10px;letter-spacing:1.1px;font-weight:800}
+.narratedIdentity{display:flex;align-items:center;gap:10px}.narratedIdentity svg{color:#cbc4ff}.narratedBottom{font-size:9px;color:#e1ddff;padding-top:7px}
+.narratedScene{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;padding:8px clamp(32px,5.4vw,77px);flex:1;max-width:830px;animation:narrateEntry .6s ease-out}
+@keyframes narrateEntry{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.narratedEyebrow{color:#cabaff;font-size:10px;letter-spacing:1.9px;font-weight:800}.narratedScene h2{font:800 clamp(21px,3.2vw,40px) Manrope;line-height:1.2;letter-spacing:-1px;margin:0;color:#fff}.narratedScene>p{color:#f0eafa;font-size:clamp(11px,1.2vw,14px);line-height:1.65;margin:3px 0 5px;max-height:140px;overflow:auto}
+.narratedHighlights{display:grid;gap:7px;width:100%;max-width:680px}.narratedHighlights>div{display:flex;align-items:center;gap:11px;padding:9px 12px;border:1px solid #ffffff2d;background:#ffffff16;border-radius:9px;color:#f2edff;font-size:clamp(10px,1.1vw,12px);line-height:1.5}.narratedHighlights>div>span:first-child{background:#ffffff29;color:#fff;border-radius:6px;font-size:10px;font-weight:800;padding:6px;flex-shrink:0}
+.narratedBigPlay{position:absolute;bottom:24%;right:8%;border:1px solid #ffffff94;border-radius:50%;height:64px;width:64px;display:grid;place-items:center;color:#fff;background:#ffffff30;box-shadow:0 0 0 11px #ffffff0d,0 10px 32px #1117474d;transition:background .2s ease,transform .2s ease}.narratedBigPlay:hover{transform:scale(1.08);background:#ffffff50}
+.narratedEnd{position:absolute;bottom:20%;right:5%;border:1px solid #ffffff55;background:#207659ab;color:#fff;border-radius:12px;padding:12px;display:flex;gap:7px;align-items:center;font-size:11px}
+.narratedControls{display:flex;align-items:center;gap:9px;padding:15px 20px;background:white}
+.narratedControls button{border:1px solid #e0e3f2;border-radius:9px;padding:10px;color:#6555ca;background:#f7f6ff;display:flex;gap:7px;align-items:center;font-size:12px;font-weight:700}
+.narratedControls button:disabled{opacity:.35;cursor:not-allowed}.narratedControls .narratedPlayToggle{color:#fff;background:linear-gradient(100deg,#5076fb,#8b61ea);border-color:#796be8;white-space:nowrap;padding:10px 14px}
+.narratedTrack{height:7px;border-radius:10px;background:#ebeef7;flex:1;min-width:20px;overflow:hidden}.narratedTrack i{background:linear-gradient(90deg,#4e76fa,#9065ec);display:block;height:100%;transition:width .4s}
+.narratedControls select{padding:9px;background:#f9f8ff;color:#6257ba;border:1px solid #e0e1f1;border-radius:8px;font-size:12px}
+.narratedHelp{padding:0 20px 16px;display:flex;gap:9px;align-items:start;color:#7f8ca6;font-size:11px;line-height:1.7}.narratedHelp svg{color:#7962d5;flex-shrink:0;margin-top:1px}
+.udVideoMode{display:flex;gap:9px;margin:14px 0 7px;flex-wrap:wrap}.udVideoMode button{border:1px solid #dedcf0;background:#fff;color:#657292;border-radius:9px;padding:10px 14px;display:flex;gap:8px;align-items:center;font-size:11px}.udVideoMode button.active{color:#5f50cb;background:#edeaff;border-color:#bcb0f3;font-weight:800}
+@media(max-width:680px){.narratedCanvas{aspect-ratio:auto;min-height:430px}.narratedScene{padding:10px 23px}.narratedTop,.narratedBottom{padding:18px}.narratedScene h2{font-size:23px}.narratedScene>p{font-size:12px;max-height:155px}.narratedHighlights>div{padding:8px;font-size:10px}.narratedBigPlay{height:48px;width:48px;right:6%;bottom:14%}.narratedBigPlay svg{width:22px}.narratedControls{gap:5px;padding:10px;flex-wrap:wrap}.narratedControls button{padding:9px}.narratedControls .narratedPlayToggle{font-size:11px}.narratedHelp{padding:4px 13px 13px;font-size:10px}.narratedTop{font-size:9px}.narratedBottom{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.narratedScene{animation:none}.narratedBigPlay{transition:none}}
