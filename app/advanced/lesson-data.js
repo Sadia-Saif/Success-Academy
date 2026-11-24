@@ -9,7 +9,7 @@ sim:'A US logistics company wants to reduce manual CRM processing without sacrif
 deliver:'Save an architecture diagram, example JSON payload, test cases, and a brief demonstration recording.',
 questions:['What input data must be validated?','What happens when an API request fails?','Which steps need human approval?','How will you prove that the solution works?'],
 tools:['n8n','HTTP API test client','JSON editor','Database sandbox','workflow run log'],
-};
+},
 sales:{
 prereq:['ICP definition','Lead research','Personalization','Discovery call basics','Questioning','Qualification','Objections','Negotiation','Stakeholder mapping','Closing'],
 goals:['Define the buyer context for','Research a practical example of','Draft a credible opener using','Simulate resistance around','Record an effective response for','Compare alternate sales motions for','Explain the value of','Evaluate decision criteria for','Improve the clarity of','Demonstrate an ethical sales process for'],
@@ -17,7 +17,7 @@ sim:'A US logistics COO has a 12-person technical team and is cautious about out
 deliver:'Produce account notes, discovery script, objection response, next-step email and pipeline entry.',
 questions:['What evidence justifies reaching out?','What problem does the buyer actually want solved?','Which stakeholders should be involved?','What ethical next step would you suggest?'],
 tools:['Sales Navigator','CRM','Meeting notes','Role-play recorder','Proposal document']
-};
+},
 english:{
 prereq:['Basic grammar','Common business terms','Short explanations','Professional introductions','Stress and intonation','Pauses','Clear questions','Storytelling','Negotiation phrases','Executive presentations'],
 goals:['Recognize useful vocabulary in','Explain the purpose of','Deliver a structured answer about','Practise a difficult sentence in','Record a role-play involving','Compare a weak and strong answer for','Communicate calmly about','Evaluate the tone of','Improve word economy in','Demonstrate executive presence with'],
